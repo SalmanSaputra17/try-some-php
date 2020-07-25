@@ -1,0 +1,17 @@
+{
+    "name": "salmansaputra17/autoload",
+    "description": "try to make simple autoload in php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "salmansaputra17",
+            "email": "salmansaputra76@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

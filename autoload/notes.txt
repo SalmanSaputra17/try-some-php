@@ -1,0 +1,16 @@
+1. buat struktur project
+2. jalankan composer init pada project tersebut (akan menghasilkan composer.json)
+3. tambahkan kode berikut pada composer.json:
+
+   "autoload": {
+        "psr-4": {
+            "TopLevelNamespace(nama vendor yang ingin digunakan)\\": "namaFolderYangAkanDiAutoload/"
+        }
+    }
+
+4. jalankan composer dump-autoload (akan menghasilkan folder vendor)
+5. pada index.php tambahkan kode:
+
+   require_once __DIR__ . '/vendor/autoload.php';
+
+-- selesai --
